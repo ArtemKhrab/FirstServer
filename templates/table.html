@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="white">
+<table border="1" style="color:red">
+    <tr>
+	  <td>OS</td>
+	  <td>{{os}}</td>
+    </tr>
+	<tr>
+	  <td>Location</td>
+	  <td>{{city}}, {{country}}</td>
+	</tr>
+    <tr>
+	  <td>Time</td>
+	  <td><script type="text/javascript">
+            window.onload = function(){
+                (function(){
+                    var date = new Date();
+                    var time = date.getHours()+':'+date.getMinutes()+':'+date.getSeconds();
+                    document.getElementsByTagName('div')[0].innerHTML = time;
+                       window.setTimeout(arguments.callee, 1000);
+                })();
+            };
+    </script>
+    <div></div>
+      </td>
+	</tr>
+</table>
+<h1></h1>
+
+</body>
+</html>
